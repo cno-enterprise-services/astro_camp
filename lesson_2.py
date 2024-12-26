@@ -12,7 +12,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Mars Rover Game")
 
 # Load and scale background image
-background = pygame.image.load('assets/Tharsis_Region.jpg')
+background = pygame.image.load('assets/tharsis_region.jpg')
 background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 # GameObject class
@@ -28,7 +28,7 @@ class GameObject:
 
 # Create game objects
 rover = GameObject('assets/mars_rover_sprite.png', 375, 500, 50, 50)
-martian = GameObject('assets/martian.png', 20, 400, 50, 50)
+martian = GameObject('assets/martian_sprite.png', 20, 400, 50, 50)
 
 # Game loop
 running = True
