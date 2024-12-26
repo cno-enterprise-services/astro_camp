@@ -30,16 +30,16 @@ background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 running = True
 while running:
 
-# Event handling
-for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-        running = False
+    # Event handling
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
 
-# Draw background
-screen.blit(background, (0, 0))
+    # Draw background
+    screen.blit(background, (0, 0))
 
-# Update display
-pygame.display.flip()
+    # Update display
+    pygame.display.flip()
 
 # Quit Pygame
 pygame.quit()
