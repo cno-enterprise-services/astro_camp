@@ -7,11 +7,6 @@ By the end of this lesson, students will be able to:
 2. Create a simple play again menu using Pygame
 3. Manage game states for restarting or exiting the game
 
-<!-- ## Arkansas CS Standards Addressed
-1. CSK8.G7.3.5: Collect and analyze data from multiple sources
-2. CSK8.G8.1.3: Demonstrate appropriate collaborative behaviors to solve problems
-3. CSK8.G6.1.2: Utilize visual representations of problem-solving logic to solve problems of level-appropriate complexity -->
-
 ## Step-by-Step Tutorial
 
 ### Step 1: Implementing the Disappearing Martian

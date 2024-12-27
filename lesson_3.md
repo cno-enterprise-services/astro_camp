@@ -7,11 +7,6 @@ By the end of this lesson, students will be able to:
 2. Apply boundary checks to keep objects within the game screen
 3. Create and implement basic collision detection between game objects
 
-<!-- ## Arkansas CS Standards Addressed
-1. CSK8.G5.2.3: Compare and contrast the relative positions of objects using ordered pairs within a program
-2. CSK8.G7.1.1: Identify and utilize level-appropriate, algorithmic problem-solving strategies
-3. CSK8.G8.1.4: Apply strategies for identifying and solving routine hardware and software problems that occur in everyday computer use -->
-
 ## Step-by-Step Tutorial
 
 ### Step 1: Implementing Player Movement

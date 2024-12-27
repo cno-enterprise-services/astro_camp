@@ -6,6 +6,12 @@
 - Load and scale game sprites
 - Position game objects on the screen
 
+## Computer Science and STEM Standards
+### Arkansas CS Standards Addressed
+1. CSK8.G7.2.2: Utilize variables to construct expressions and equations
+2. CSK8.G6.3.1: Represent a variety of data in multiple formats
+3. CSK8.G8.2.2: Utilize variables in the creation of functions, methods, or similar constructs
+
 ## Key Concepts
 1. Class definition in Python
 2. Image loading with Pygame

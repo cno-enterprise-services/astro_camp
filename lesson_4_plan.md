@@ -6,6 +6,12 @@
 - Understand game state management
 - Learn to use Pygame's time module
 
+## Computer Science and STEM Standards
+### Arkansas CS Standards Addressed
+1. CSK8.G7.3.5: Collect and analyze data from multiple sources
+2. CSK8.G8.1.3: Demonstrate appropriate collaborative behaviors to solve problems
+3. CSK8.G6.1.2: Utilize visual representations of problem-solving logic to solve problems of level-appropriate complexity
+
 ## Key Concepts
 1. Using Pygame's time module for game events
 2. Implementing periodic events in the game loop

@@ -4,6 +4,12 @@
 - Implement player movement using keyboard input
 - Understand and implement basic collision detection
 - Create win and lose conditions for the game
+  
+## Computer Science and STEM Standards
+### Arkansas CS Standards Addressed
+1. CSK8.G5.2.3: Compare and contrast the relative positions of objects using ordered pairs within a program
+2. CSK8.G7.1.1: Identify and utilize level-appropriate, algorithmic problem-solving strategies
+3. CSK8.G8.1.4: Apply strategies for identifying and solving routine hardware and software problems that occur in everyday computer use
 
 ## Key Concepts
 1. Handling keyboard input in Pygame

@@ -11,7 +11,7 @@ Welcome to Lesson 1 of creating your Mars Rover game! In this lesson, you'll lea
 - Load and display a background image
 - Implement a basic game loop
 - Handle the quit event to close the game properly
-
+  
 ---
 
 ## Step 1: Install Pygame
