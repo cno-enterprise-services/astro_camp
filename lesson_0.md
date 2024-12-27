@@ -31,14 +31,51 @@ python --version
 ```
 You should see the installed version of Python.
 
-> You may have to type ```python3``` instead of ```python``` on some systems.
+> You may have to type `python3` instead of `python` on some systems.
 
 ---
 
 ## Step 2: Writing Your First Program
+### Using the Python REPL
+
+The Python REPL (Read-Eval-Print Loop) is an interactive environment where you can write and execute Python code line by line. It's a great way to experiment with Python and see immediate results.
+
+1. Open your terminal or command prompt.
+2. Type `python` and press Enter. You should see something like this:
+   ```
+   Python 3.x.x (default, Month Day Year, HH:MM:SS)
+   [GCC x.x.x] on linux
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>>
+   ```
+   The `>>>` is the Python prompt, indicating that Python is ready for your input.
+
+   > Again on some systems you may have to type `python3`
+
+4. At the prompt, type the following and press Enter:
+   ```
+   >>> print("Hello, Mars!")
+   ```
+
+5. You should immediately see the output:
+   ```
+   Hello, Mars!
+   ```
+
+6. You can continue to enter Python commands. For example:
+   ```
+   >>> 2 + 2
+   4
+   >>> "Mars" * 3
+   'MarsMarsMars'
+   ```
+
+7. To exit the Python REPL, type `exit()` and press Enter, or use the keyboard shortcut Ctrl+D (on Linux/Mac) or Ctrl+Z (on Windows).
+
+This interactive environment is great for quick experiments and learning. As you progress, you'll write longer programs in text files, but the REPL is always available for quick tests and calculations.
 
 ### Using an IDE or Text Editor
-You can write Python code in any text editor (e.g., VS Code, PyCharm) or use an online editor like [Replit](https://replit.com/).
+You can write Python code in any text editor (e.g., notepad (Windows), TextEdit (macOS), VS Code, PyCharm) or use an online editor like [Replit](https://replit.com/).
 
 ### Your First Program
 Create a new file called `lesson0.py` and write the following code:
