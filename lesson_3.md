@@ -40,12 +40,12 @@ for event in pygame.event.get():
             direction_x = 0
 
 # Update player position
-player.y_pos -= direction_y * level_speed
-player.x_pos += direction_x * level_speed
+rover.y_pos -= direction_y * level_speed
+rover.x_pos += direction_x * level_speed
 
 # Keep player within screen bounds
-player.x_pos = max(0, min(player.x_pos, SCREEN_WIDTH - player.width))
-player.y_pos = max(0, min(player.y_pos, SCREEN_HEIGHT - player.height))
+rover.x_pos = max(0, min(rover.x_pos, SCREEN_WIDTH - rover.width))
+rover.y_pos = max(0, min(rover.y_pos, SCREEN_HEIGHT - rover.height))
 ```
 
 ### Step 2: Collision Detection
@@ -68,12 +68,12 @@ We'll use collision detection in the game loop:
 
 ```python
 # Check for collisions
-if player.detect_collision(enemy_0):
+if rover.detect_collision(enemy_0):
     is_game_over = True
     did_win = False
     text = font.render('You Lose!', True, BLACK_COLOR)
     self.game_screen.blit(text, (275, 350))
-elif player.detect_collision(dest):
+elif rover.detect_collision(dest):
     is_game_over = True
     did_win = True
     text = font.render('You Win!', True, BLACK_COLOR)
