@@ -1,4 +1,4 @@
-# Lesson Plan 1
+# Lesson Plan 1: Getting a Good Start
 
 ## Learning Objectives
 - Understand basic Pygame setup
