@@ -12,7 +12,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Mars Rover Game")
 
 # Load and scale background image
-background = pygame.image.load('assets/Tharsis_Region.jpg')
+background = pygame.image.load('assets/tharsis_region.jpg')
 background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 # Game loop
