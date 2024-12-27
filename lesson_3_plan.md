@@ -1,4 +1,4 @@
-# Lesson 3: Adding Movement and Collision Detection
+# Lesson Plan 3: Adding Movement and Collision Detection
 
 ## Learning Objectives
 - Implement player movement using keyboard input
