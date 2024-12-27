@@ -20,7 +20,13 @@ A game built in stages to help teach coding and game design during the CNO Astro
 
 ## Lessons
 - [Lesson 0](lesson_0.md) - Quick guide to get learners started if they are completly new to Python programming.
+- [Lesson 1](lesson_1.md) - Learn the basics to start the game programe.
+- [Lesson 2](lesson_2.md) - Expand the game further and learn some game design basics.
+- [Lesson 3](lesson_3.md) - Get a functioning game finished.
+- [Lesson 4](lesson_4,md) - Make tweaks to improve your game.
 
+## Lesson Plans
+Each lesson has a lesson plan that is a high level break down of the lesson with example code.
 
 ## Further Learning
 - [Making Games with Python & Pygame](https://inventwithpython.com/pygame/)
