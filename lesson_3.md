@@ -1,5 +1,5 @@
 # Lesson 3: Adding Movement and Collision Detection
-Welcome to Lesson 3 of creating your Mars Rover game! In this lesson, you'll learn how to things move in the game environment using Pygame. By the end of this lesson, you'll have a complete game.
+Welcome to Lesson 3 of creating your Mars Rover game! In this lesson, you'll learn how to make things move in the game environment using Pygame. By the end of this lesson, you'll have a complete game.
 
 ## Learning Objectives
 By the end of this lesson, students will be able to:
