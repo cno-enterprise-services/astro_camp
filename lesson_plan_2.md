@@ -1,4 +1,4 @@
-# Lesson 2: Creating Game Objects
+# Lesson Plan 2: Creating Game Objects
 
 ## Learning Objectives
 - Understand Object-Oriented Programming (OOP) basics
