@@ -4,7 +4,7 @@ import pygame
 pygame.init()
 
 # Define constants
-SCREEN_TITLE = 'My Game'
+SCREEN_TITLE = 'Mars Rover Game'
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 WHITE_COLOR = (255, 255, 255)
@@ -82,8 +82,8 @@ class Game:
             rover.x_pos += direction_x * level_speed
             
             # Keep player within screen bounds
-            rover.x_pos = max(0, min(martian.x_pos, SCREEN_WIDTH - martian.width))
-            rover.y_pos = max(0, min(martian.y_pos, SCREEN_HEIGHT - martian.height))
+            rover.x_pos = max(0, min(rover.x_pos, SCREEN_WIDTH - rover.width))
+            rover.y_pos = max(0, min(rover.y_pos, SCREEN_HEIGHT - rover.height))
 
             # Draw objects
             self.game_screen.fill(WHITE_COLOR)
