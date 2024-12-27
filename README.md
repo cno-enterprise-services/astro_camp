@@ -27,6 +27,10 @@ A game built in stages to help teach coding and game design during the CNO Astro
 
 ## Lesson Plans
 Each lesson has a lesson plan that is a high level break down of the lesson with example code.
+- [Lesson 1](lesson_1_plan.md)
+- [Lesson 2](lesson_2_plan.md)
+- [Lesson 3](lesson_3_plan.md)
+- [Lesson 4](lesson_4_plan.md)
 
 ## Further Learning
 - [Making Games with Python & Pygame](https://inventwithpython.com/pygame/)
