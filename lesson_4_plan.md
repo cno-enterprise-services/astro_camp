@@ -1,4 +1,4 @@
-# Lesson 4: Advanced Features - Disappearing Martian and Play Again Menu
+# Lesson Plan 4: Advanced Features - Disappearing Martian and Play Again Menu
 
 ## Learning Objectives
 - Implement a disappearing and reappearing game object
