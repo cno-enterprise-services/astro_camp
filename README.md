@@ -13,7 +13,7 @@ A game built in stages to help teach coding and game design during the CNO Astro
 
 ## Getting started
 - First make sure you have Python installed ([instrustions here](https://github.com/cno-enterprise-services/astro_camp_rover_game/blob/main/lesson_0.md#install-python)).
-- Next ensure you have the Python library pygame installed ([instructions here](https://www.pygame.org/wiki/GettingStarted)).
+- Next ensure you have the Python library "pygame" installed ([instructions here](https://www.pygame.org/wiki/GettingStarted)).
   ```bash
   python3 -m pip install -U pygame --user
   ```
