@@ -51,9 +51,9 @@ class Game:
         direction_y = 0
         direction_x = 0
 
-        player = GameObject('assets/mars_rover_sprite.png', 375, 500, 50, 50)
-        enemy_0 = GameObject('assets/martian_sprite.png', 20, 400, 50, 50)
-        dest = GameObject('Assets/space_suit_1.png', 375, 50, 50, 80)
+        rover = GameObject('assets/mars_rover_sprite.png', 375, 500, 50, 50)
+        martian = GameObject('assets/martian_sprite.png', 20, 400, 50, 50)
+        destination = GameObject('Assets/space_suit_1.png', 375, 50, 50, 80)
 
         clock = pygame.time.Clock()
         font = pygame.font.Font(None, 36)
@@ -78,27 +78,27 @@ class Game:
                         direction_x = 0
 
             # Game logic here
-            player.y_pos -= direction_y * level_speed
-            player.x_pos += direction_x * level_speed
+            rover.y_pos -= direction_y * level_speed
+            rover.x_pos += direction_x * level_speed
             
             # Keep player within screen bounds
-            player.x_pos = max(0, min(player.x_pos, SCREEN_WIDTH - player.width))
-            player.y_pos = max(0, min(player.y_pos, SCREEN_HEIGHT - player.height))
+            rover.x_pos = max(0, min(martian.x_pos, SCREEN_WIDTH - martian.width))
+            rover.y_pos = max(0, min(martian.y_pos, SCREEN_HEIGHT - martian.height))
 
             # Draw objects
             self.game_screen.fill(WHITE_COLOR)
             self.game_screen.blit(self.image, (0, 0))
-            player.draw(self.game_screen)
-            enemy_0.draw(self.game_screen)
-            dest.draw(self.game_screen)
+            rover.draw(self.game_screen)
+            martian.draw(self.game_screen)
+            destination.draw(self.game_screen)
 
             # Check for collisions
-            if player.detect_collision(enemy_0):
+            if rover.detect_collision(martian):
                 is_game_over = True
                 did_win = False
                 text = font.render('You Lose!', True, BLACK_COLOR)
                 self.game_screen.blit(text, (275, 350))
-            elif player.detect_collision(dest):
+            elif rover.detect_collision(destination):
                 is_game_over = True
                 did_win = True
                 text = font.render('You Win!', True, BLACK_COLOR)
