@@ -81,9 +81,9 @@ class Game:
         rotation_speed = 2
         movement_speed = level_speed
 
-        player = GameObject('assets/mars_rover_sprite.png', 375, 500, 50, 50)
-        enemy_0 = GameObject('assets/martian_sprite.png', 20, 400, 50, 50)
-        dest = GameObject('assets/space_suit_1.png', 375, 50, 50, 80)
+        rover= GameObject('assets/mars_rover_sprite.png', 375, 500, 50, 50)
+        martian = GameObject('assets/martian_sprite.png', 20, 400, 50, 50)
+        destination = GameObject('assets/space_suit_1.png', 375, 50, 50, 80)
 
         clock = pygame.time.Clock()
 
@@ -96,36 +96,36 @@ class Game:
 
             keys = pygame.key.get_pressed()
             if keys[pygame.K_LEFT]:
-                player.angle += rotation_speed
+                rover.angle += rotation_speed
             if keys[pygame.K_RIGHT]:
-                player.angle -= rotation_speed
+                rover.angle -= rotation_speed
             if keys[pygame.K_UP]:
-                player.x_pos += movement_speed * math.cos(math.radians(player.angle))
-                player.y_pos -= movement_speed * math.sin(math.radians(player.angle))
+                rover.x_pos += movement_speed * math.cos(math.radians(rover.angle))
+                rover.y_pos -= movement_speed * math.sin(math.radians(rover.angle))
             if keys[pygame.K_DOWN]:
-                player.x_pos -= movement_speed * math.cos(math.radians(player.angle))
-                player.y_pos += movement_speed * math.sin(math.radians(player.angle))
+                rover.x_pos -= movement_speed * math.cos(math.radians(rover.angle))
+                rover.y_pos += movement_speed * math.sin(math.radians(rover.angle))
 
-            # Keep player within screen bounds
-            player.x_pos = max(0, min(player.x_pos, SCREEN_WIDTH - player.width))
-            player.y_pos = max(0, min(player.y_pos, SCREEN_HEIGHT - player.height))
+            # Keep rover within screen bounds
+            rover.x_pos = max(0, min(rover.x_pos, SCREEN_WIDTH - rover.width))
+            rover.y_pos = max(0, min(rover.y_pos, SCREEN_HEIGHT - rover.height))
 
             # Check if it's time to change the martian's position
             current_time = pygame.time.get_ticks()
             if current_time - last_martian_change > self.MARTIAN_CHANGE_INTERVAL:
                 last_martian_change = current_time
-                enemy_0.x_pos = random.randint(0, SCREEN_WIDTH - enemy_0.width)
-                enemy_0.y_pos = random.randint(0, SCREEN_HEIGHT - enemy_0.height)
+                martian.x_pos = random.randint(0, SCREEN_WIDTH - martian.width)
+                martian.y_pos = random.randint(0, SCREEN_HEIGHT - martian.height)
 
             # Draw objects
             self.game_screen.fill(WHITE_COLOR)
             self.game_screen.blit(self.image, (0, 0))
-            player.draw(self.game_screen)
-            enemy_0.draw(self.game_screen)
-            dest.draw(self.game_screen)
+            rover.draw(self.game_screen)
+            martian.draw(self.game_screen)
+            destination.draw(self.game_screen)
 
             # Check for collisions
-            if player.detect_collision(enemy_0):
+            if rover.detect_collision(martian):
                 yes_rect, no_rect = self.draw_popup("Play Again?")
                 waiting_for_answer = True
                 while waiting_for_answer:
@@ -138,7 +138,7 @@ class Game:
                             elif no_rect.collidepoint(event.pos):
                                 return False  # Exit the game
                     pygame.display.update()
-            elif player.detect_collision(dest):
+            elif rover.detect_collision(destination):
                 is_game_over = True
                 did_win = True
                 text = self.font.render('You Win!', True, BLACK_COLOR)
