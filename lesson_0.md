@@ -151,7 +151,7 @@ while count < 5:
 
 Output:
 ```
-Count is 0
+Count is 0https://automatetheboringstuff.com/
 Count is 1
 Count is 2
 Count is 3
@@ -231,3 +231,13 @@ In this lesson, you learned:
 3. How to import libraries for additional functionality.
 
 Now that you're familiar with Python basics, you're ready to move on to **Lesson 1**, where you'll create your first game window using Pygame!
+
+## Further Study
+If you want to get into more detail about learning Python check out this free book. [Automate the Boring Stuff with Python](https://automatetheboringstuff.com)
+
+
+
+
+
+
+
